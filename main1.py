@@ -1,43 +1,43 @@
-# class Pupil:
-#     school_name="ABC"
+class Pupil:
+    school_name="ABC"
 
-#     def __init__(self, name):
-#         self.name=name
+    def __init__(self, name):
+        self.name=name
 
-#     @classmethod
-#     def change_name(cls, name):
-#         Pupil.school_name=name
-
-
-# pupil=Pupil("Sherbek")
-
-# print(pupil.school_name)
-
-# Pupil.change_name("PDP School")
-
-# print(pupil.school_name)
+    @classmethod
+    def change_name(cls, name):
+        Pupil.school_name=name
 
 
-# from typing import Any
+pupil=Pupil("Sherbek")
+
+print(pupil.school_name)
+
+Pupil.change_name("PDP School")
+
+print(pupil.school_name)
 
 
-# class Talaba:
-#     summa1=30000000
+from typing import Any
 
 
-#     def __init__(self, summa):
-#         self.summa=summa
+class Talaba:
+    summa1=30000000
 
 
-#     @classmethod
-#     def change_summa(cls, summa):
-#         Talaba.change_summa=summa
+    def __init__(self, summa):
+        self.summa=summa
 
 
-# talaba=Talaba("36000000")
-# print(talaba.summa1)
-# Talaba.change_summa(36000000)
-# print(talaba.summa)
+    @classmethod
+    def change_summa(cls, summa):
+        Talaba.change_summa=summa
+
+
+talaba=Talaba("36000000")
+print(talaba.summa1)
+Talaba.change_summa(36000000)
+print(talaba.summa)
 
 
 
